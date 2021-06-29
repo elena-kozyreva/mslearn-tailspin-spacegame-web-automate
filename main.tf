@@ -14,9 +14,9 @@ features {}
 terraform {
   backend "azurerm" {
    resource_group_name = "tf-storage-rg-elko"
-   storage_account_name = "tfsa31343"
+   storage_account_name = "tfsa5556"
    container_name = "tfstate"
-   key = "terraform.tfstate"
+   key = "6IxufU+c6sFQ1tUoDaBs9DnzlB4Lrk87rz8wDtMyNvWy7YPy0Xx9QICVhUTtC0Q2iyyVpKKrsEpwtYlE+O3WZQ"
   }
 }
 
