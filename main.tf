@@ -11,6 +11,14 @@ provider "azurerm" {
   # Configuration options
 features {}
 }
+terraform {
+  backend "azurerm" {
+   resource_group_name = "tf-storage-rg-elko"
+   storage_account_name = "tfsa5556"
+   container_name = "tfstate"
+   key = "terraform.tfstate"
+  }
+}
 
 variable "resource_group_name" {
   default = "tailspin-space-game-rg-elko"
