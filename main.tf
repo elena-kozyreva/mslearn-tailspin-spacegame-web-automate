@@ -1,17 +1,19 @@
 terraform {
-  required_version = "> 0.12.0"
-
-  backend "azurerm" {
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "2.65.0"
+    }
   }
 }
 
 provider "azurerm" {
-  version = ">=2.0.0"
-  features {}
+  # Configuration options
+features {}
 }
 
 variable "resource_group_name" {
-  default = "tailspin-space-game-rg"
+  default = "tailspin-space-game-rg-elko"
   description = "The name of the resource group"
 }
 
